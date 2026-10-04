@@ -1,0 +1,19 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><title>Rapport jev-dsn-norme-impact-dev-preuve-manquante</title><style>body{font:16px system-ui;max-width:1000px;margin:3rem auto;padding:0 1rem;background:#f7f9fc;color:#14293d}article{background:white;padding:1rem;margin:1rem 0;border:1px solid #ccd5df}pre{white-space:pre-wrap}small{color:#46596b}</style><h1>jev-dsn-norme-impact-dev-preuve-manquante — a_revoir</h1><p>Mode : regles. Seuils de démarrage non calibrés sur des documents réels.</p><article><h2>Rubrique inventoriée : S21.G00.30.001 : etaye</h2><p>Contrôle exact satisfait.</p><p>Ajouter la rubrique à l’inventaire avant de conclure à l’absence d’impact.</p><details><summary>a — fixture:a</summary><pre>dossier.changes.0 : {&quot;id&quot;: &quot;C1&quot;, &quot;rubric&quot;: &quot;S21.G00.30.001&quot;, &quot;before&quot;: &quot;Contrôler le numéro de sécurité sociale sans accepter de numéro temporaire.&quot;, &quot;after&quot;: &quot;Le contrôle accepte un numéro de sécurité sociale temporaire.&quot;}</pre><small>SHA-256 f4c51b92fd4da6ee090cf25b0b7f49bb79959798532d58f37a62bb6bd6405aa9</small></details><details><summary>b — fixture:b</summary><pre>dossier.changes.0 : {&quot;id&quot;: &quot;C1&quot;, &quot;rubric&quot;: &quot;S21.G00.30.001&quot;, &quot;before&quot;: &quot;Contrôler le numéro de sécurité sociale sans accepter de numéro temporaire.&quot;, &quot;after&quot;: &quot;Le contrôle accepte un numéro de sécurité sociale temporaire.&quot;}</pre><small>SHA-256 f4c51b92fd4da6ee090cf25b0b7f49bb79959798532d58f37a62bb6bd6405aa9</small></details></article><article><h2>Couverture de la nouvelle exigence : R1 : a_revoir</h2><p>Passage manquant : abstention.</p><p>Comparer les passages et faire valider le rapprochement.</p><details><summary>b — fixture:b</summary><pre>dossier.changes.0 : {&quot;id&quot;: &quot;C1&quot;, &quot;rubric&quot;: &quot;S21.G00.30.001&quot;, &quot;before&quot;: &quot;Contrôler le numéro de sécurité sociale sans accepter de numéro temporaire.&quot;, &quot;after&quot;: &quot;Le contrôle accepte un numéro de sécurité sociale temporaire.&quot;}</pre><small>SHA-256 f4c51b92fd4da6ee090cf25b0b7f49bb79959798532d58f37a62bb6bd6405aa9</small></details><details><summary>c — fixture:c</summary><pre>dossier.rules.0 : {&quot;id&quot;: &quot;R1&quot;, &quot;rubrics&quot;: [&quot;S21.G00.30.001&quot;], &quot;description&quot;: &quot;&quot;}</pre><small>SHA-256 8dd0c345b31bf908d352fdae522abea80758b1c6429ec9a82df276c24e3c15ad</small></details></article><h2>Sorties métier</h2><pre>{
+  &quot;affectedRules&quot;: [
+    &quot;R1&quot;
+  ],
+  &quot;testScenarios&quot;: [
+    {
+      &quot;rule&quot;: &quot;R1&quot;,
+      &quot;rubric&quot;: &quot;S21.G00.30.001&quot;,
+      &quot;versions&quot;: [
+        &quot;CT2026.1.2&quot;,
+        &quot;CT2027.1.2&quot;
+      ],
+      &quot;before&quot;: &quot;Contrôler le numéro de sécurité sociale sans accepter de numéro temporaire.&quot;,
+      &quot;after&quot;: &quot;Le contrôle accepte un numéro de sécurité sociale temporaire.&quot;,
+      &quot;testAction&quot;: &quot;Ajouter au moins un cas positif, un cas négatif et le cas d’exception décrit dans la nouvelle exigence.&quot;
+    }
+  ],
+  &quot;limite&quot;: &quot;Les scénarios sont des pistes de tests, sans validation officielle de conformité NEODeS.&quot;
+}</pre><p>Les champs structurés importés doivent être vérifiés contre les pièces originales. Un résultat étayé ne vaut ni certification ni décision juridique ou administrative.</p></html>

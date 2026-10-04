@@ -1,0 +1,22 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><title>Rapport impact-dsn</title><style>body{font:16px system-ui;max-width:1000px;margin:3rem auto;padding:0 1rem;background:#f7f9fc;color:#14293d}article{background:white;padding:1rem;margin:1rem 0;border:1px solid #ccd5df}pre{white-space:pre-wrap}small{color:#46596b}</style><h1>impact-dsn — etaye</h1><p>Mode : regles. Seuils de démarrage non calibrés sur des documents réels.</p><article><h2>Rubrique inventoriée : S21.G00.30.001 : etaye</h2><p>Contrôle exact satisfait.</p><p>Ajouter la rubrique à l’inventaire avant de conclure à l’absence d’impact.</p><details><summary>avant0 — fixture:avant0</summary><pre>S21.G00.30.001
+Numéro temporaire refusé.</pre><small>SHA-256 d31d501b5a5cf50310ba37c5d53633bd89a5ef38f77828a34014454ef067246b</small></details><details><summary>apres0 — fixture:apres0</summary><pre>S21.G00.30.001
+Numéro temporaire accepté.</pre><small>SHA-256 e6e843a37498fbca2a9b7a92f2fdb64d908a3a24b327ebae9a07d900636d1c7b</small></details></article><article><h2>Couverture de la nouvelle exigence : R1 : etaye</h2><p>Passages identiques après normalisation.</p><p>Comparer les passages et faire valider le rapprochement.</p><details><summary>apres0 — fixture:apres0</summary><pre>S21.G00.30.001
+Numéro temporaire accepté.</pre><small>SHA-256 e6e843a37498fbca2a9b7a92f2fdb64d908a3a24b327ebae9a07d900636d1c7b</small></details><details><summary>regle0 — fixture:regle0</summary><pre>{&quot;id&quot;:&quot;R1&quot;,&quot;rubrics&quot;:[&quot;S21.G00.30.001&quot;],&quot;description&quot;:&quot;Numéro temporaire accepté.&quot;,&quot;docId&quot;:&quot;regle0&quot;}</pre><small>SHA-256 a4dec8d1a1f092fd71481848e25fbe6c20419e79982f73234d18c77686ba519f</small></details></article><h2>Sorties métier</h2><pre>{
+  &quot;affectedRules&quot;: [
+    &quot;R1&quot;
+  ],
+  &quot;testScenarios&quot;: [
+    {
+      &quot;rule&quot;: &quot;R1&quot;,
+      &quot;rubric&quot;: &quot;S21.G00.30.001&quot;,
+      &quot;versions&quot;: [
+        &quot;CT2026.1.2&quot;,
+        &quot;CT2027.1.2&quot;
+      ],
+      &quot;before&quot;: &quot;Numéro temporaire refusé.&quot;,
+      &quot;after&quot;: &quot;Numéro temporaire accepté.&quot;,
+      &quot;testAction&quot;: &quot;Ajouter au moins un cas positif, un cas négatif et le cas d’exception décrit dans la nouvelle exigence.&quot;
+    }
+  ],
+  &quot;limite&quot;: &quot;Les scénarios sont des pistes de tests, sans validation officielle de conformité NEODeS.&quot;
+}</pre><p>Les champs structurés importés doivent être vérifiés contre les pièces originales. Un résultat étayé ne vaut ni certification ni décision juridique ou administrative.</p></html>
